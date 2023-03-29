@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+img#product_img2{
+    display: none;
+}
+img#product_img3{
+    display: none;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: #d0eaff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product{
+    width: 90%;
+    max-width: 750px;
+    display: flex;
+}
+.gallery{
+    /* flex-basis: 47%; */
+    width: 38vw;
+    background: #241e24;
+    transform: scale(1.08);
+    box-shadow: -10px 5px 10px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.gallery img{
+    width: 100%;
+    display: block;
+    padding-top: 100px;
+}
+.details{
+    /* flex-basis: 53%; */
+    width: 38vw;
+    background: #fff;
+    padding: 40px;
+    padding-left: 60px;
+    box-shadow: -10px 5px 10px 10px rgba(0, 0, 0, 0.1);
+    font-size: 13px;
+    font-weight: 500;
+    color: #777;
+}
+.details h1{
+    font-size: 30px;
+    color: #333;
+}
+.details h2{
+    font-size: 30px;
+    color: #555;
+    font-weight: 600;
+}
+.details h3{
+    color: #00d874;
+    margin-bottom: 20px;
+}
+.details form{
+    font-size: 15px;
+    font-weight: 400;
+}
+.select{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+.select p{
+    width: 70px;
+}
+.select input:checked + span{
+    color: blue;
+    font-weight: 600;
+}
+.select input{
+    display: none;
+}
+.select span{
+    padding: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.color{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.color p{
+    width: 75px;
+}
+.color span{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.color-1{
+    background: red;
+}
+.color-2{
+    background: rgb(47, 247, 47);
+}
+.color-3{
+    background: rgb(0, 0, 255);
+}
+.color-4{
+    background: rgb(250, 145, 163);
+}
+.color input{
+    display: none;
+}
+.color input:checked + span{
+    transform: scale(0.6);
+    box-shadow: 0 0 0 4px #fff, 0 0 0 6px #000;
+}
+.qty{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+.qty p{
+    margin-right: 20px;
+}
+.qty input{
+    width: 50px;
+    padding: 4px 3px;
+    border-radius: 15px;
+    background: lightcyan;
+}
+form button{
+    margin-top: 100px;
+    width: 20vw;
+    padding: 3vh;
+    background: blue;
+    color: white;
+    border-radius: 40px;
+    font-size: 17px;
+    box-shadow: 0 10px 10px rgb(85, 63, 240, 0.25);
+    cursor: pointer;
+}
+.control{
+    position: absolute;
+    bottom: 200px;
+    left: 315px; 
+}
+.btn{
+    display: block;
+    background: gray;
+    border-radius: 73px;
+    margin: 9px 0px;
+    padding: 2px 7px;
+    cursor: pointer;
+}
+#btn2{
+    background-color: white;
+}
+#btn3{
+    background-color: white;
+}
+.btn.active{
+    background: #fff;
+}
+@media screen and (max-width: 980px){
+    .product{
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    .details{
+        width: 44vw;
+        margin: auto;
+    }
+    .gallery{
+        width: 44vw;
+        margin: auto;
+    }
+    img#product_img{
+        padding-top: 45px;
+    }
+    img#product_img2{
+        padding-top: 45px;
+    }
+    img#product_img3{
+        padding-top: 45px;
+    }
+    .control{
+        position: relative;
+        /* bottom: 30vh; */
+        left: 38vw;
+    }
+}
+@media screen and (max-width: 520px){
+    .gallery{
+        width: 70vw;
+    }
+    .control{
+        bottom: 29vh;
+        left: 7vw;
+    }
+    img#product_img{
+        margin-bottom: -98px;
+    }
+    img#product_img2{
+        margin-bottom: -98px;
+    }
+    img#product_img3{
+        margin-bottom: -98px;
+    }
+    .details{
+        width: 75%;
+        text-align: left;
+        padding: 9% 5% 5% 5%;
+        font-size: 4vw;
+    }
+    .details form{
+        font-size: 4vw;
+        font-weight: bold;
+    }
+    .details form button{
+        margin-top: 70px;
+        width: 64vw;
+        padding: 13px 0;
+    }
+    .color span{
+        width: 23px;
+        height: 23px;
+    }
+    .qty input{
+        font-size: 4vw;
+    }
+    /* .details h1{
+        font-size: 37px;
+    }
+    .details h2{
+        font-size: 33px;
+    } */
+}

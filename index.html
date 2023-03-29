@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <div class="container">
+        <div class="product">
+            <div class="gallery">
+                <img src="image1.png" id="product_img">
+                <img  src="image2.png" id="product_img2">
+                <img src="image3.png" id="product_img3">
+                <div class="control">
+                    <button class="btn active" id="btn1">1</button>
+                    <button class="btn" id="btn2">2</button>
+                    <button class="btn" id="btn3">3</button>
+                </div>
+            </div>
+            <div class="details">
+                <h1>Casual T-Shirts</h1>
+                <h2>$15.00</h2>
+                <h3>30% OFF</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur architecto</p>
+                <form>
+                    <div class="select">
+                        <p>Size</p>
+                        <label for="small">
+                            <input type="radio" name="size" id="small">
+                            <span>S</span>
+                        </label>
+                        <label for="medium">
+                            <input type="radio" name="size" id="medium">
+                            <span>M</span>
+                        </label>
+                        <label for="Large">
+                            <input type="radio" name="size" id="Large">
+                            <span>L</span>
+                        </label>
+                        <label for="x-large">
+                            <input type="radio" name="size" id="x-large">
+                            <span>XL</span>
+                        </label>
+                        <label for="xx-large">
+                            <input type="radio" name="size" id="xx-large">
+                            <span>XXL</span>
+                        </label>
+                    </div>
+                    <div class="color">
+                        <p>Color</p>
+                        <label for="red">
+                            <input type="radio" name="color" id="red">
+                            <span class="color-1"></span>
+                        </label>
+                        <label for="green">
+                            <input type="radio" name="color" id="green">
+                            <span class="color-2"></span>
+                        </label>
+                        <label for="blue">
+                            <input type="radio" name="color" id="blue">
+                            <span class="color-3"></span>
+                        </label>
+                        <label for="pink">
+                            <input type="radio" name="color" id="pink">
+                            <span class="color-4"></span>
+                        </label>
+                    </div>
+                    <div class="qty">
+                        <p>Quantity</p>
+                        <input type="number" value="1">
+                    </div>
+                    <button>Buy Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
